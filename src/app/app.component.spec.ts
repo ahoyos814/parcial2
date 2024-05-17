@@ -1,6 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PinguinoListComponent } from './pinguinos/pinguino-list/pinguino-list.component';
+
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -9,7 +12,8 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        PinguinoListComponent
       ],
     }).compileComponents();
   });
